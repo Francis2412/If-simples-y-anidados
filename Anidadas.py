@@ -1,4 +1,6 @@
+import os 
 def créditoInterno():
+    os.system("cls")
     #LUna pulpería vende al crédito solo a clientes registrados. 
     #Si lo están, revisa que su saldo pendiente no supere C$500. 
     #Diseña los mensajes para todos los casos.
@@ -17,7 +19,8 @@ def créditoInterno():
 def servicioEntrega():
     #Un emprendimiento calcula una tarifa simulada según zona urbana o rural y, dentro
     #de cada zona, según si el paquete supera 5 kg. Propón tarifas y calcula el total..
-    zona = input("¿La zona en la que quiere realizar entrega es urbana o rural?")
+    os.system("cls")
+    zona = input("¿La zona en la que quiere realizar entrega es urbana o rural? ")
     if zona == "urbana":
         paquete = input("¿El paquete supera los 5kg? (S/N): ").upper()
         if paquete == "S":
@@ -33,6 +36,7 @@ def servicioEntrega():
             print("Su total será de: C$80")
 
 def clasificaciónCafé():
+    os.system("cls")
     print ("clasificación de Café")
     #Una cooperativa primero verifica si la humedad está entre 10% y 12%.
     #Si cumple, clasifica el lote según los defectos reportados. Propón categorías claras.
@@ -50,6 +54,7 @@ def clasificaciónCafé():
    
 
 def reservaHospedaje():
+    os.system("cls")
     print ("Reserva de hospedaje")
     #Un hospedaje de Granada ofrece una promoción simulada en temporada baja.
     #Dentro de esa temporada, el porcentaje depende de si la reserva alcanza 3 noches.
@@ -65,12 +70,13 @@ def reservaHospedaje():
 
 
 def ventaFerreterías():
+    os.system("cls")
     #Una ferretería distingue mayoristas y minoristas.
     #Para cada tipo, el descuento depende de un monto mínimo diferente.
     #Propón porcentajes y explica tus reglas.
-    ferreteria = input("¿Su ferretería es mayorista o minorista?")
+    ferreteria = input("¿Su ferretería es mayorista o minorista? ")
     if ferreteria == "mayorista":
-        montof = int(input("¿Cual es el monto que va a pagar?"))
+        montof = int(input("¿Cual es el monto que va a pagar? "))
         if  montof >= 5000:
             print("¡Enhorabuena! usted ha conseguido un descuento del 15%")
             print(f"El monto total es: {montof - (montof * 0.15)} ")
@@ -78,7 +84,7 @@ def ventaFerreterías():
             print(f"El monto total es: {montof}  ")
 
     if  ferreteria == "minoristas":
-        montof = int(input("¿Cual es el monto que va a pagar?"))
+        montof = int(input("¿Cual es el monto que va a pagar? "))
         if  montof >= 2000: 
             print ("¡Enhorabuena! usted ha conseguido un descuento del 5%")
             print(f"El monto total es: {montof - (montof * 0.05)} ")
