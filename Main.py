@@ -41,3 +41,5 @@ def main():
             reservaHospedaje()
         case 10:
             ventaFerreterías()
+
+main()
